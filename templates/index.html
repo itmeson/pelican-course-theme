@@ -2,6 +2,12 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 
+<dl>
+{% for article in dates %}
+    <dd>{{ article.locale_date}} <a href='{{article.url}}'>{{article.title}}</a></dd>
+{% endfor %}
+</dl>
+
     {% if articles %}
     {% for article in articles_page.object_list %}        
 
