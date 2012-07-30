@@ -3,9 +3,11 @@
 {% block content %}
 
 <dl>
-{% for article in dates %}
-    <dd>{{ article.locale_date}} <a href='{{article.url}}'>{{article.title}}</a></dd>
+{% if articles %}
+{% for article in articles_page.object_list %}
+    <dd>{{ article.locale_date}} <a href='{{ SITEURL }}/{{article.url}}'>{{article.title}}</a></dd>
 {% endfor %}
+{% endif %}
 </dl>
 
     {% if articles %}
