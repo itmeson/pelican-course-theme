@@ -85,6 +85,10 @@ ol {
 	margin: 1em 0 1.5em 1.5em;
 }
 
+ol.loweralpha {list-style-type: lower-alpha}
+ol.withroman {list-style-type: lower-roman}
+ol.upperalpha {list-style-type: upper-alpha}
+
 .post-info {
     float:right;
     margin:10px;
